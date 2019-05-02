@@ -19,6 +19,33 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{fronka}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b5c121dbcbd2e613155b1c395fc32457}{%
+           family={Froňka},
+           familyi={F\bibinitperiod},
+           given={Aleš},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0859e6e0a85beb34e2e4c95c7fb213a2}{%
+           family={Moučka},
+           familyi={M\bibinitperiod},
+           given={Ladislav},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{912be34ea6c0e38aa97fb4c34c92df35}
+      \strng{fullhash}{912be34ea6c0e38aa97fb4c34c92df35}
+      \strng{bibnamehash}{912be34ea6c0e38aa97fb4c34c92df35}
+      \strng{authorbibnamehash}{912be34ea6c0e38aa97fb4c34c92df35}
+      \strng{authornamehash}{912be34ea6c0e38aa97fb4c34c92df35}
+      \strng{authorfullhash}{912be34ea6c0e38aa97fb4c34c92df35}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Základní fyzikální principy - fyzika radonu (prezentace kurzy ZOZ srpen 2018)}
+      \field{year}{2018}
+      \true{nocite}
+    \endentry
     \entry{japonci}{article}{}
       \name{author}{4}{}{%
         {{hash=e1e1b4b8fa9c076f455fd9c4d2f1501f}{%
@@ -48,8 +75,8 @@
       \strng{authorbibnamehash}{5ad6f62945ec3974ac07aacdeb678aff}
       \strng{authornamehash}{5ad6f62945ec3974ac07aacdeb678aff}
       \strng{authorfullhash}{5ad6f62945ec3974ac07aacdeb678aff}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Conventional multi-zonal ventilation measurement methods by multiple types of perfluorocarbon tracers use a number of different gases equal to the number of zones (n). The possible n×n+n airflows are estimated from the mass balance of the gases and the airflow balance. However, some airflows may not occur because of inter-zonal geometry, and the introduction of unnecessary, unknown parameters can impair the accuracy of the estimation. Also, various error factors often yield an irrational negative airflow rate. Conventional methods are insufficient for the evaluation of error. This study describes a way of using the least-squares technique to improve the precision of estimation and to evaluate reliability. From the equations’ residual, the error variance–covariance matrix Λq of the estimated airflow rate error is deduced. In addition, the coefficient of determinant using the residual sum of squares and total variation is introduced. Furthermore, the error matrix mΛq from the measurement errors in the gas concentration and gas emission rate is deduced. The discrepancy ratio of the model premises is defined by dividing the diagonal elements of the former by those of the latter. Moreover, the index of irrationality of the estimated negative airflow rate is defined, based on the different results of the three estimation methods. Some numerical experiments are also carried out to verify the flow rate estimation and the reliability evaluation theory.}
@@ -112,8 +139,8 @@
       \strng{authorbibnamehash}{6de207c83038c633e365aa2031cea824}
       \strng{authornamehash}{6de207c83038c633e365aa2031cea824}
       \strng{authorfullhash}{6de207c83038c633e365aa2031cea824}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International journal of environmental research and public health}
@@ -147,8 +174,8 @@
       \strng{authorbibnamehash}{374a6c5c889b3b7b33674625291d2b0d}
       \strng{authornamehash}{374a6c5c889b3b7b33674625291d2b0d}
       \strng{authorfullhash}{374a6c5c889b3b7b33674625291d2b0d}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{CERTIFIKOVANÁ METODIKA, Metodika stanovení výměny vzduchu ve vnitřním ovzduší budov s využitím pasivních integrálních měřidel indikačních plynů (pro potřeby SÚJB)}

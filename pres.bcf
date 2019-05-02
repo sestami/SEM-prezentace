@@ -2010,8 +2010,9 @@
     <bcf:datasource type="file" datatype="bibtex">citace.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">japonci</bcf:citekey>
-    <bcf:citekey order="2">japonci2</bcf:citekey>
+    <bcf:citekey order="1">fronka</bcf:citekey>
+    <bcf:citekey order="2">japonci</bcf:citekey>
+    <bcf:citekey order="3">japonci2</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
