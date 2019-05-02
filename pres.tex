@@ -1,0 +1,120 @@
+\documentclass[10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{appendixnumberbeamer}
+\usepackage[czech]{babel}
+\usepackage[]{hyperref}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage[]{graphicx}
+\usepackage[figurename=]{caption}
+\usepackage[
+    backend=biber
+    ,style=iso-numeric
+    ,autolang=other
+    ,pagetotal=true
+    ,sortlocale=cs_CZ
+    ,bibencoding=UTF8
+    ,spacecolon=false
+    ,block=space
+]{biblatex}
+\addbibresource{citace.bib}
+
+\usetheme[sectionpage=none, numbering=fraction, progressbar= head, block=fill]{metropolis}
+\author{Michal Šesták}
+\title{Multi-kompártmentový přístup ke kvantifikaci  objemové rychlosti přísunu zdrojů radonu do budov s využitím měřené intenzity větrání pomocí techniky indikačních plynů}
+\subtitle{}
+\institute{}
+%\institute{Fakulta jaderná a fyzikálně inženýrská, ČVUT v Praze\\[0.5em]
+%Vedoucí práce: Ing. Iva Ambrožová, Ph. D.}
+\date{6. května 2019}
+\begin{document}
+
+\maketitle
+
+%\begin{frame}{Obsah}
+    %\tableofcontents
+%\end{frame}
+\begin{frame}{Osnova}
+\item Úvod
+\item Radon (Co to je, proc je nebezpecny, jeho dcery, co ovlivnuje jeho prisun do bytu, jak se meri, obrana proti nemu)
+\item Rovnice
+\item Model
+\item Měření průtoků vzduchů
+\end{frame}
+
+\begin{frame}{Rovnice}
+    \small
+    \begin{equation}
+        \dot{a_i}=\frac{1}{V_i}\left( \sum^n_{j=1}a_j k_{ji}-\sum^n_{j=1}a_i k_{ij}-(\lambda+k_i)a_i+Q_i \right)
+        \label{eq:odvozovani}
+    \end{equation}
+        %\caption{<+Caption text+>}
+        %\label{tab:<+label+>}
+    \begin{table}
+        \centering
+        \begin{tabular}{lll}
+            $a_i$ & koncentrace radonu v $i$-té zóně& [\si{Bq/m^3}] \\
+            $V_i$ & objem $i$-té zóny& [\si{m^3}] \\
+            $k_{ij}$ & objemový průtok vzduchu z $i$-té zóny do $j$-té zóny& [\si{m^3/hod}]\\
+            $\lambda$ & přeměnová konstanta radonu& [\si{1/hod}]\\
+            $k_i$ & výměna vzduchu $i$-té zóny& [\si{1/hod}] \\
+            $Q_i$ & přísun radonu do $i$-té zóny& [\si{Bq/hod}] \\
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Rovnice}
+    \small
+    \begin{align}
+        V_i\dot{a_i}&=\sum^n_{j=1}a_j k_{ji}-\sum^n_{j=1}a_i k_{ij}-(\lambda+k_i)a_i+Q_i\quad&\text{první varianta}\\
+        V_i\dot{a_i}&=\sum^{n+1}_{j=1}a_j k_{ji}-\sum^{n+1}_{j=1}a_i k_{ij}-\lambda a_i+Q_i\quad&\text{druhá varianta}
+        \label{eq:rovnice}
+    \end{align}
+    \begin{itemize}
+        \item druhá varianta v případě blízkosti uranových hald atd.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Měření průtoků vzduchu mezi zónami}
+    \small
+    \begin{itemize}
+        \item indikační plyny = perfluorokarbony
+            \begin{itemize}
+                \item netoxické, inertní, čisté, bezbarvé, nehořlavé a neradioaktivní plyny. 
+                \item v přírodě se nevyskytují
+            \end{itemize}
+        \item vyvíječe
+        \item integrální detektory 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Modelový příklad 1}
+        \centering
+        \includegraphics[width=.9\textwidth]{zony.png}
+        \cite{japonci}       
+\end{frame}
+
+\begin{frame}{Modelový příklad 2}
+        \centering
+        \includegraphics[width=.9\textwidth]{zony2.png}
+        \cite{japonci2}       
+\end{frame}
+
+% různá nastavení
+%\metroset{sectionpage=simple,none}
+%\begin{overlayarea}{\textwidth}{\textheight}\end{overlayarea}
+
+
+\begin{frame}{Reference}
+    \nocite{*}
+\renewcommand*{\bibfont}{\tiny}
+\printbibliography
+\end{frame}
+\end{document}
