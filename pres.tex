@@ -4,6 +4,7 @@
 \usepackage{lmodern}
 \usepackage{microtype}
 \usepackage[]{amsmath}
+\usepackage{accents}
 \usepackage{amssymb}
 \usepackage{amsfonts}
 \usepackage{appendixnumberbeamer}
@@ -25,7 +26,8 @@
 ]{biblatex}
 \addbibresource{citace.bib}
 
-\usetheme[sectionpage=none, numbering=fraction, progressbar= head, block=fill]{metropolis}
+%\usetheme[sectionpage=none, numbering=fraction, progressbar= head, block=fill]{metropolis}
+\usetheme[numbering=fraction, progressbar= head, block=fill]{metropolis}
 \author{Michal Šesták}
 \title{Multi-kompártmentový přístup ke kvantifikaci  objemové rychlosti přísunu zdrojů radonu do budov s využitím měřené intenzity větrání pomocí techniky indikačních plynů}
 \subtitle{}
@@ -42,11 +44,13 @@
 %\end{frame}
 \begin{frame}{Osnova}
 \item Úvod
-\item Radon (Co to je, proc je nebezpecny, jeho dcery, co ovlivnuje jeho prisun do bytu, jak se meri, obrana proti nemu)
+\item Radon (Co to je, jeho dcery, proč je nebezpečný, co ovlivňuje jeho přísun do bytu, jak se měří, ochrana proti němu)
 \item Rovnice
 \item Model
 \item Měření průtoků vzduchů
 \end{frame}
+
+\section{Radon (Co to je, jeho dcery, proč je nebezpečný, co ovlivňuje jeho přísun do bytu, jak se měří, ochrana proti němu)}
 
 \begin{frame}[t]{Radon}
     \small
@@ -62,10 +66,29 @@
     \includegraphics[width=.8\textwidth]{radon_chain.png}
 \end{frame}
 
-\begin{frame}{Rovnice}
+\begin{frame}{Hodnoty OAR pro různá prostředí}
+    \small
+    \centering
+    \includegraphics[width=.8\textwidth]{tabulka_hodnoty_radonu.png}
+\end{frame}
+
+\begin{frame}{Detektory radonu}
+    \small
+    dej sem dva obrazky -> stopace a radima
+\end{frame}
+
+\section{Můj výzkumný úkol}
+
+\begin{frame}{Multi-kompártmentový přístup ke kvantifikaci  objemové rychlosti přísunu zdrojů radonu do budov s využitím měřené intenzity větrání pomocí techniky indikačních plynů}
+    \small
+    \centering
+        \includegraphics[width=.8\textwidth]{model.jpg}
+\end{frame}
+
+\begin{frame}{Model}
     \small
     \begin{equation}
-        \dot{a_i}=\frac{1}{V_i}\left( \sum^n_{j=1}a_j k_{ji}-\sum^n_{j=1}a_i k_{ij}-(\lambda+k_i)a_i+Q_i \right)
+        \dot{a_i}=\frac{1}{V_i}\left( \sum^n_{j=1}a_j k_{ji}-\sum^n_{j=1}a_i k_{ij}+Q_i \right)-(\lambda+k_i)a_i
         \label{eq:odvozovani}
     \end{equation}
         %\caption{<+Caption text+>}
@@ -83,44 +106,74 @@
     \end{table}
 \end{frame}
 
-\begin{frame}{Rovnice}
+\begin{frame}{Model}
     \small
     \begin{align}
-        V_i\dot{a_i}&=\sum^n_{j=1}a_j k_{ji}-\sum^n_{j=1}a_i k_{ij}-(\lambda+k_i)a_i+Q_i\quad&\text{první varianta}\\
-        V_i\dot{a_i}&=\sum^{n+1}_{j=1}a_j k_{ji}-\sum^{n+1}_{j=1}a_i k_{ij}-\lambda a_i+Q_i\quad&\text{druhá varianta}
+        V_i\dot{a_i}&=\sum^n_{j=1}a_j k_{ji}-\sum^n_{j=1}a_i k_{ij}-V_i(\lambda+k_i)a_i+Q_i\quad&\text{první varianta}\\
+        V_i\dot{a_i}&=\sum^{n+1}_{j=1}a_j k_{ji}-\sum^{n+1}_{j=1}a_i k_{ij}-V_i\lambda a_i+Q_i\quad&\text{druhá varianta}
         \label{eq:rovnice}
     \end{align}
     \begin{itemize}
         \item druhá varianta v případě blízkosti uranových hald atd.
         \item \textbf{rovnovážný stav:}
             \begin{equation}
-                0=\sum^n_{j=1}a_j k_{ji}-\sum^n_{j=1}a_i k_{ij}-(\lambda+k_i)a_i+Q_i
+                0=\sum^n_{j=1}a_j k_{ji}-\sum^n_{j=1}a_i k_{ij}-V_i(\lambda+k_i)a_i+Q_i
             \end{equation}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Odhad nejistot}
+\begin{frame}{Model - doplňující informace}
     \small
-    kovarianční matice
+    \begin{itemize}
+        \item Odhad nejistot $Q_i=Q_i(a_j, V_i, \dot{a_i}, k_{ij}, k_{ji}, k_i)$, $j\in\hat{n}$:
+            \begin{equation}
+                \sigma_{Q_i,Q_j}=\sum_k\sum_l\frac{\partial Q_i}{\partial x_k}\frac{\partial Q_j}{\partial x_l}\sigma_{x_k,x_l}\,,
+                \label{eq:cov_matrix}
+            \end{equation}
+            ale není k dispozici výběrová kovarianční matice
+        \item kontinuální měření: nahrazení derivace $\dot{a}$ diferencemi $\accentset{\circ}{a}_-, \accentset{\circ}{a}, \accentset{\circ}{a}_+$, např.:
+            \begin{equation}
+                \accentset{\circ}{a}=\frac{a(t+\tau)-a(t-\tau)}{2\tau}\,,
+                \label{eq:centralni_diference}
+            \end{equation}
+            $\tau=\SI{30}{min}$ je časový krok
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Měření průtoků vzduchu mezi zónami}
     \small
     \begin{itemize}
-        \item indikační plyny = perfluorokarbony
+        \item indikační plyny = perfluorokarbony,
             \begin{itemize}
                 \item netoxické, inertní, čisté, bezbarvé, nehořlavé a neradioaktivní plyny. 
                 \item v přírodě se nevyskytují
             \end{itemize}
         \item $N$ zón = minimálně $N$ tracerů
         \item vyvíječe
-        \item integrální detektory 
+        \item integrální detektory, analýza tracerů pomocí chromatografie
+        \item další instrumentace: laserové dálkometry, kontinuální měřidla teploty, dávkovače tracerů do vyvíječů, pinzety atd.
+        \item \textbf{doba měření}: 7 dní (screening) nebo jeden měsíc v běžném uživatelském režimu
+            
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Detektory a vyvíječe}
+    \small
+        \centering
+        \includegraphics[width=.45\textwidth]{1.jpg}
+        \includegraphics[width=.45\textwidth]{3.jpg}
+\end{frame}
+
+\begin{frame}{Dávkovač}
+    \small
+    \centering
+        \includegraphics[width=.7\textwidth]{davkovac.png}
+        \cite{japonci2}       
 \end{frame}
 
 \begin{frame}{Detektor}
     \small
-        \centering
+    \centering
         \includegraphics[width=.6\textwidth]{meridlo_traceru.jpg}
 \end{frame}
 
@@ -136,12 +189,20 @@
         \cite{japonci2}       
 \end{frame}
 
+\begin{frame}{Problémy}
+    \small
+    \begin{itemize}
+        \item nehomogenita koncentrace indikačních plynů v jednotlivých zónách => rozdělení na podzóny, použití pravděpodobnostních distribucí
+        \item mohou vycházet záporné průtoky/výměny vzduchu -> je nutná kvalitní analýza nejistot
+    \end{itemize}
+\end{frame}
+
 % různá nastavení
 %\metroset{sectionpage=simple,none}
 %\begin{overlayarea}{\textwidth}{\textheight}\end{overlayarea}
 
 
-\begin{frame}{Reference}
+\begin{frame}[allowframebreaks]
     \nocite{*}
 \renewcommand*{\bibfont}{\tiny}
 \printbibliography

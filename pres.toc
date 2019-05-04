@@ -1,2 +1,4 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {czech}{}
+\beamer@sectionintoc {1}{Radon (Co to je, jeho dcery, proč je nebezpečný, co ovlivňuje jeho přísun do bytu, jak se měří, ochrana proti němu)}{3}{0}{1}
+\beamer@sectionintoc {2}{Můj výzkumný úkol}{8}{0}{2}

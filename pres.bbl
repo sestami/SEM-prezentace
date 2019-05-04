@@ -182,6 +182,24 @@
       \field{year}{2016}
       \true{nocite}
     \endentry
+    \entry{markes}{online}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labeltitlesource}{title}
+      \field{title}{Markes International}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.markes.com/
+      \endverb
+      \verb{url}
+      \verb https://www.markes.com/
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
