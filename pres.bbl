@@ -46,59 +46,52 @@
       \field{year}{2018}
       \true{nocite}
     \endentry
-    \entry{japonci}{article}{}
-      \name{author}{4}{}{%
-        {{hash=e1e1b4b8fa9c076f455fd9c4d2f1501f}{%
-           family={Okuyama},
-           familyi={O\bibinitperiod},
-           given={Hiroyasu},
-           giveni={H\bibinitperiod}}}%
-        {{hash=f472a154850161b05d768af23778a5b4}{%
-           family={Onishi},
-           familyi={O\bibinitperiod},
-           given={Yoshinori},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=c6697f8917e98b02d7899bb7d74da0e7}{%
-           family={Tanabe},
-           familyi={T\bibinitperiod},
-           given={Shin-ichi},
-           giveni={S\bibinithyphendelim i\bibinitperiod}}}%
-        {{hash=71db0051bdd49e58c97f3ea24b80c954}{%
-           family={Kashihara},
-           familyi={K\bibinitperiod},
-           given={Seiichi},
-           giveni={S\bibinitperiod}}}%
+    \entry{radim}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=77aca8d5b4779ce5c34ecc336ec1ea23}{%
+           family={Plch},
+           familyi={P\bibinitperiod},
+           given={Jiří},
+           giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{5ad6f62945ec3974ac07aacdeb678aff}
-      \strng{fullhash}{5ad6f62945ec3974ac07aacdeb678aff}
-      \strng{bibnamehash}{5ad6f62945ec3974ac07aacdeb678aff}
-      \strng{authorbibnamehash}{5ad6f62945ec3974ac07aacdeb678aff}
-      \strng{authornamehash}{5ad6f62945ec3974ac07aacdeb678aff}
-      \strng{authorfullhash}{5ad6f62945ec3974ac07aacdeb678aff}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \strng{namehash}{77aca8d5b4779ce5c34ecc336ec1ea23}
+      \strng{fullhash}{77aca8d5b4779ce5c34ecc336ec1ea23}
+      \strng{bibnamehash}{77aca8d5b4779ce5c34ecc336ec1ea23}
+      \strng{authorbibnamehash}{77aca8d5b4779ce5c34ecc336ec1ea23}
+      \strng{authornamehash}{77aca8d5b4779ce5c34ecc336ec1ea23}
+      \strng{authorfullhash}{77aca8d5b4779ce5c34ecc336ec1ea23}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Conventional multi-zonal ventilation measurement methods by multiple types of perfluorocarbon tracers use a number of different gases equal to the number of zones (n). The possible n×n+n airflows are estimated from the mass balance of the gases and the airflow balance. However, some airflows may not occur because of inter-zonal geometry, and the introduction of unnecessary, unknown parameters can impair the accuracy of the estimation. Also, various error factors often yield an irrational negative airflow rate. Conventional methods are insufficient for the evaluation of error. This study describes a way of using the least-squares technique to improve the precision of estimation and to evaluate reliability. From the equations’ residual, the error variance–covariance matrix Λq of the estimated airflow rate error is deduced. In addition, the coefficient of determinant using the residual sum of squares and total variation is introduced. Furthermore, the error matrix mΛq from the measurement errors in the gas concentration and gas emission rate is deduced. The discrepancy ratio of the model premises is defined by dividing the diagonal elements of the former by those of the latter. Moreover, the index of irrationality of the estimated negative airflow rate is defined, based on the different results of the three estimation methods. Some numerical experiments are also carried out to verify the flow rate estimation and the reliability evaluation theory.}
-      \field{issn}{0360-1323}
-      \field{journaltitle}{Building and Environment}
-      \field{number}{3}
-      \field{title}{Statistical data analysis method for multi-zonal airflow measurement using multiple kinds of perfluorocarbon tracer gas}
-      \field{volume}{44}
-      \field{year}{2009}
+      \field{title}{Monitor radonu RADIM 3A}
       \true{nocite}
-      \field{pages}{546\bibrangedash 557}
-      \range{pages}{12}
-      \verb{doi}
-      \verb https://doi.org/10.1016/j.buildenv.2008.04.014
-      \endverb
-      \verb{urlraw}
-      \verb http://www.sciencedirect.com/science/article/pii/S0360132308000905
-      \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/S0360132308000905
-      \endverb
-      \keyw{Multi-zonal airflow measurement,Perfluorocarbon tracer gas,Least squares,Error analysis}
+    \endentry
+    \entry{jiranek}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=bbf1d6caf6507411f84ad06035d6bb7c}{%
+           family={Jiránek},
+           familyi={J\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {SÚJB}%
+        {Stavební fakulta ČVUT v Praze}%
+      }
+      \strng{namehash}{bbf1d6caf6507411f84ad06035d6bb7c}
+      \strng{fullhash}{bbf1d6caf6507411f84ad06035d6bb7c}
+      \strng{bibnamehash}{bbf1d6caf6507411f84ad06035d6bb7c}
+      \strng{authorbibnamehash}{bbf1d6caf6507411f84ad06035d6bb7c}
+      \strng{authornamehash}{bbf1d6caf6507411f84ad06035d6bb7c}
+      \strng{authorfullhash}{bbf1d6caf6507411f84ad06035d6bb7c}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Opatření proti radonu pro novostavby}
+      \field{year}{2017}
+      \true{nocite}
     \endentry
     \entry{japonci2}{article}{}
       \name{author}{6}{}{%
@@ -139,8 +132,8 @@
       \strng{authorbibnamehash}{6de207c83038c633e365aa2031cea824}
       \strng{authornamehash}{6de207c83038c633e365aa2031cea824}
       \strng{authorfullhash}{6de207c83038c633e365aa2031cea824}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International journal of environmental research and public health}
@@ -154,6 +147,60 @@
       \verb{doi}
       \verb 10.3390/ijerph7093348
       \endverb
+    \endentry
+    \entry{japonci}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e1e1b4b8fa9c076f455fd9c4d2f1501f}{%
+           family={Okuyama},
+           familyi={O\bibinitperiod},
+           given={Hiroyasu},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f472a154850161b05d768af23778a5b4}{%
+           family={Onishi},
+           familyi={O\bibinitperiod},
+           given={Yoshinori},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c6697f8917e98b02d7899bb7d74da0e7}{%
+           family={Tanabe},
+           familyi={T\bibinitperiod},
+           given={Shin-ichi},
+           giveni={S\bibinithyphendelim i\bibinitperiod}}}%
+        {{hash=71db0051bdd49e58c97f3ea24b80c954}{%
+           family={Kashihara},
+           familyi={K\bibinitperiod},
+           given={Seiichi},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ad6f62945ec3974ac07aacdeb678aff}
+      \strng{fullhash}{5ad6f62945ec3974ac07aacdeb678aff}
+      \strng{bibnamehash}{5ad6f62945ec3974ac07aacdeb678aff}
+      \strng{authorbibnamehash}{5ad6f62945ec3974ac07aacdeb678aff}
+      \strng{authornamehash}{5ad6f62945ec3974ac07aacdeb678aff}
+      \strng{authorfullhash}{5ad6f62945ec3974ac07aacdeb678aff}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Conventional multi-zonal ventilation measurement methods by multiple types of perfluorocarbon tracers use a number of different gases equal to the number of zones (n). The possible n×n+n airflows are estimated from the mass balance of the gases and the airflow balance. However, some airflows may not occur because of inter-zonal geometry, and the introduction of unnecessary, unknown parameters can impair the accuracy of the estimation. Also, various error factors often yield an irrational negative airflow rate. Conventional methods are insufficient for the evaluation of error. This study describes a way of using the least-squares technique to improve the precision of estimation and to evaluate reliability. From the equations’ residual, the error variance–covariance matrix Λq of the estimated airflow rate error is deduced. In addition, the coefficient of determinant using the residual sum of squares and total variation is introduced. Furthermore, the error matrix mΛq from the measurement errors in the gas concentration and gas emission rate is deduced. The discrepancy ratio of the model premises is defined by dividing the diagonal elements of the former by those of the latter. Moreover, the index of irrationality of the estimated negative airflow rate is defined, based on the different results of the three estimation methods. Some numerical experiments are also carried out to verify the flow rate estimation and the reliability evaluation theory.}
+      \field{issn}{0360-1323}
+      \field{journaltitle}{Building and Environment}
+      \field{number}{3}
+      \field{title}{Statistical data analysis method for multi-zonal airflow measurement using multiple kinds of perfluorocarbon tracer gas}
+      \field{volume}{44}
+      \field{year}{2009}
+      \true{nocite}
+      \field{pages}{546\bibrangedash 557}
+      \range{pages}{12}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.buildenv.2008.04.014
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0360132308000905
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0360132308000905
+      \endverb
+      \keyw{Multi-zonal airflow measurement,Perfluorocarbon tracer gas,Least squares,Error analysis}
     \endentry
     \entry{metodika}{article}{}
       \name{author}{2}{}{%
@@ -174,8 +221,8 @@
       \strng{authorbibnamehash}{374a6c5c889b3b7b33674625291d2b0d}
       \strng{authornamehash}{374a6c5c889b3b7b33674625291d2b0d}
       \strng{authorfullhash}{374a6c5c889b3b7b33674625291d2b0d}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{CERTIFIKOVANÁ METODIKA, Metodika stanovení výměny vzduchu ve vnitřním ovzduší budov s využitím pasivních integrálních měřidel indikačních plynů (pro potřeby SÚJB)}
@@ -183,8 +230,8 @@
       \true{nocite}
     \endentry
     \entry{markes}{online}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labeltitlesource}{title}
       \field{title}{Markes International}
       \field{urlday}{4}
